@@ -1,0 +1,25 @@
+﻿<Window x:Class="BeautySalon_20._101_11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BeautySalon_20._101_11"
+        mc:Ignorable="d"
+        Title="BeautySalon" Height="600" Width="1000" MinHeight="600" MinWidth="1000" Icon="/images/beauty_logo.ico">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="323*"/>
+            <ColumnDefinition Width="469*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="#E1E4FF" Grid.ColumnSpan="2">
+            <Button Name="btnBack" Background="#FF4A6D" FontWeight="Bold" Foreground="White" Content="Назад" Click="btnBack_Click" Margin="0,10,23,10" Height="NaN" HorizontalAlignment="Right" Width="127"/>
+            <Image Width="45" Height="45" HorizontalAlignment="Left" Margin="5" Source="/images\beauty_logo.png" Visibility="Visible"/>
+        </Grid>
+        <Frame x:Name="FrmMain" Grid.Row="1" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2" ContentRendered="FrmMain_ContentRendered"/>
+    </Grid>
+</Window>
