@@ -46,7 +46,7 @@ namespace BeautySalon_20._101_11.Windows
                 spID.Visibility = Visibility.Collapsed;
             }
             DataContext = client;
-            MessageBox.Show($"{client.Birthday}");
+            dpBirthDate.SelectedDate = client.Birthday;
             cmbGender.ItemsSource = db.Gender.ToList();
         }
 
